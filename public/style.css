@@ -44,7 +44,20 @@
 
 /* --- スタートボタンのスタイル --- */
 #start-container {
-    margin-top: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/999D58CF-3FEB-431C-9FAF-18D3C0292D63.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
     opacity: 0;
     animation: fadeInButton 1s ease-in 5s 1 forwards;
 }
@@ -58,8 +71,14 @@
     }
 }
 
+#start-container h1 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
 #start-button {
-    margin-top: 300px;
     padding: 20px 40px;
     font-size: 1.5em;
     font-weight: bold;
@@ -94,6 +113,8 @@ h1 {
 
 /* --- 認証コンテナのスタイル --- */
 #auth-container {
+    position: relative;
+    z-index: 1950;
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 12px; /* 角を少し丸く */
