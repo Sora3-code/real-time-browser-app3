@@ -78,6 +78,7 @@ startButton.addEventListener('click', () => {
     startContainer.classList.add('hidden');
     authContainer.classList.remove('hidden');
     loginUsernameInput.focus();
+    document.body.classList.add('auth-background');
 });
 
 // --- Auth Form Switching ---
@@ -204,6 +205,8 @@ socket.on('loginResult', (result) => {
         authContainer.classList.add('hidden');
         gameArea.classList.remove('hidden');
         myItemsContainer.classList.remove('hidden');
+        document.body.classList.remove('auth-background');
+        document.body.classList.add('game-background');
         
         // Use the data sent on login to initialize the game
         initializeGame(result.initialModals, result.userTakenModalIds);
