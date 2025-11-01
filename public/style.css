@@ -10,14 +10,14 @@
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    animation: fadeOutAndHide 1.5s ease-out 2s 1 forwards;
+    animation: fadeOutAndHide 3s ease-out 6.5s 1 forwards;
 }
 
 #splash-text {
     font-size: 4em;
     color: #2c3e50;
     opacity: 0;
-    animation: fadeInText 1.5s ease-in 0.5s 1 forwards;
+    animation: fadeInText 3s ease-in 0.5s 1 forwards;
 }
 
 @keyframes fadeInText {
@@ -46,7 +46,7 @@
 #start-container {
     margin-top: 300px;
     opacity: 0;
-    animation: fadeInButton 1s ease-in 3.5s 1 forwards;
+    animation: fadeInButton 1s ease-in 5s 1 forwards;
 }
 
 @keyframes fadeInButton {

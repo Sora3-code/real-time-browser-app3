@@ -65,6 +65,14 @@ let myTakenModals = [];
 // Event Listeners
 //-----------------------------------------------------------------------
 
+// --- splash screen ---
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        console.log('display startButton.');
+        startContainer.classList.remove('hidden');
+    }, 5000);
+});
+
 // --- start button ---
 startButton.addEventListener('click', () => {
     startContainer.classList.add('hidden');
